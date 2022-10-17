@@ -103,7 +103,7 @@ return packer.startup(function(use)
             {'L3MON4D3/LuaSnip'},
             {'rafamadriz/friendly-snippets'},
         },
-        config = [[ require('plugins/lsp-zero')]]
+        config = [[ require('plugins/lsp')]]
     }
 
 

@@ -1,7 +1,5 @@
 local lsp = require('lsp-zero')
 
-lsp.preset('recommended')
-
 lsp.ensure_installed({
     'html',
     'cssls',
@@ -13,7 +11,10 @@ lsp.ensure_installed({
     'emmet_ls',
     'gopls',
     'jsonls',
+    'taplo',
     'yamlls'
 })
+
+lsp.preset('recommended')
 
 lsp.setup()
