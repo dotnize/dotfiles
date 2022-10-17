@@ -1,7 +1,8 @@
 require("presence"):setup({
     neovim_image_text = "Neovim",
-    --main_image = "file",
-    --blacklist = {"toggleterm", "NvimTree", "fzf"}, -- not working?
+    client_id = "1030901286499000460",
+    main_image = "file",
+    --blacklist = {"bash;#toggleterm#%d", "NvimTree_%d", "sh"}, -- not working?
     buttons = function(buffer, repo_url)
         local button = { label = "GitHub", url = "https://github.com/nizewn" }
 
