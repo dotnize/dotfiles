@@ -1,6 +1,3 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
 
