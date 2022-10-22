@@ -1,4 +1,4 @@
-id=$(xprop -name 'polybar-tray_HDMI-A-0' _NET_WM_PID | grep -o '[[:digit:]]*')
+id=$(xprop -name 'polybar-tray_eDP' _NET_WM_PID | grep -o '[[:digit:]]*')
 
 if [ $? -eq 0 ]
 then
