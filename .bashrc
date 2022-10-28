@@ -26,6 +26,12 @@ fi
 
 unset rc
 
+# dnf shortcuts
+alias c="sudo dnf clean all"
+alias i="sudo dnf install"
+alias u="sudo dnf upgrade"
+alias cu="c && u"
+
 # add colors to ls
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
