@@ -17,6 +17,7 @@ vim.opt.relativenumber = true
 vim.opt.ruler = false
 
 vim.opt.timeoutlen = 300
+vim.o.updatetime = 800
 
 vim.opt.showmode = false
 vim.o.background = "dark"
