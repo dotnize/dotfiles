@@ -24,6 +24,14 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- visual indent
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
+
+-- move selected text up and down
+keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+
 -- navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
@@ -35,7 +43,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- clear search highlights
-keymap("n", "<leader>/", "<cmd>nohlsearch<CR>", opts)
+keymap("n", "<leader>/", "<cmd>nohlsearch<Bar>:echo<CR>", opts)
+keymap("n", "<ESC>", "<cmd>nohlsearch<Bar>:echo<CR>", opts)
 
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
