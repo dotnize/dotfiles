@@ -1,5 +1,7 @@
 local lsp = require('lsp-zero')
 
+lsp.preset('recommended')
+
 lsp.ensure_installed({
     'html',
     'cssls',
@@ -15,6 +17,7 @@ lsp.ensure_installed({
     'yamlls'
 })
 
-lsp.preset('recommended')
+-- auto open diagnostics on hover
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
 
 lsp.setup()
