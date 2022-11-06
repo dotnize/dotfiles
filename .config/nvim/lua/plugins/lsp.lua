@@ -6,6 +6,8 @@ lsp.ensure_installed({
     'html',
     'cssls',
     'bashls',
+    'jdtls',
+    'sumneko_lua',
     'tsserver',
     'rust_analyzer',
 --  'sqls',

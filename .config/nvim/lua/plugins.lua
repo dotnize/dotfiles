@@ -33,6 +33,7 @@ return packer.startup(function(use)
     use {
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+        config = [[ require('plugins/treesitter') ]]
     }
 
     -- fzf-lua fuzzy finder
@@ -40,7 +41,7 @@ return packer.startup(function(use)
         'ibhagwan/fzf-lua',
         config = [[ require('plugins/fzf') ]]
     }
-   
+
     -- lualine status bar
     use {
         'nvim-lualine/lualine.nvim',
