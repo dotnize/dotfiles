@@ -76,13 +76,6 @@ return packer.startup(function(use)
         config = [[ require('plugins/presence') ]]
     }
 
-    -- bufferline/tabs
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "v2.*",
-        config = [[ require('plugins/bufferline') ]]
-    }
-
     -- lsp-zero
     use {
         'VonHeikemen/lsp-zero.nvim',
