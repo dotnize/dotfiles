@@ -201,8 +201,8 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 bindsym --release Scroll_Lock exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
 
 # touchpad tapping & natural scrolling
+exec xinput set-prop 11 291 1
 exec xinput set-prop 11 299 1
-exec xinput set-prop 11 307 1
 
 default_border pixel 1
 default_floating_border pixel 2
