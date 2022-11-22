@@ -196,9 +196,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# screenshots with scrot and xclip
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
-bindsym --release Scroll_Lock exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
+# screenshots with maim and xclip
+bindsym --release Print exec "mkdir -p ~/Pictures/screenshots && scrfn=~/Pictures/screenshots/screenshot_$(date +%s).png && maim $scrfn && xclip -selection clipboard -t image/png -i $scrfn" 
+bindsym --release Scroll_Lock exec "mkdir -p ~/Pictures/screenshots && scrfn=~/Pictures/screenshots/screenshot_$(date +%s).png && maim -s $scrfn && xclip -selection clipboard -t image/png -i $scrfn"
 
 # touchpad tapping & natural scrolling
 exec xinput set-prop 11 291 1
