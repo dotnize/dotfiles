@@ -10,4 +10,3 @@ some dotfiles for my Fedora Sway setup (incomplete)
 - [foot](https://codeberg.org/dnkl/foot)
 - [fuzzel](https://codeberg.org/dnkl/fuzzel)
 - zsh + ohmyzsh + powerlevel10k
-- neovim
