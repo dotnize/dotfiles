@@ -1,22 +1,13 @@
 # dotfiles
-Dotfiles for my Fedora + i3 setup.
 
+some dotfiles for my Fedora Sway setup (incomplete)
 
-## requisites
-(may be incomplete)
-- RobotoMono [Nerd Font](https://www.nerdfonts.com/font-downloads)
-- [alacritty](https://github.com/alacritty/alacritty)
-- [polybar](https://github.com/polybar/polybar)
-- [rofi](https://github.com/davatorium/rofi)
-- [starship](https://github.com/starship/starship)
-- [neovim](https://github.com/neovim/neovim)
-  - [ripgrep](https://github.com/BurntSushi/ripgrep)
-  - [fzf](https://github.com/junegunn/fzf)
-  - [bat](https://github.com/sharkdp/bat)
-  - [lazygit](https://github.com/jesseduffield/lazygit)
+<img src="https://github.com/nizefoo/dotfiles/assets/48910077/08bcc74d-75db-4bbf-b301-fe51de735b8e" width="720" />
 
-
-## screenshots
-<img src="https://i.imgur.com/AZLlqKT.png" width="720" />
-<img src="https://i.imgur.com/Rhc8UBn.png" width="720" />
-
+- [gruvbox](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme) dark hard
+- swaywm
+- waybar
+- [foot](https://codeberg.org/dnkl/foot)
+- [fuzzel](https://codeberg.org/dnkl/fuzzel)
+- zsh + ohmyzsh + powerlevel10k
+- neovim

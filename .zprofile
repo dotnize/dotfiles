@@ -1,12 +1,3 @@
-# .bash_profile
-
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
-
-# User specific environment and startup programs
-
 # start sway desktop
 if [ "$(tty)" = "/dev/tty1" ]; then
     export GTK_THEME=Gruvbox-Dark-BL
@@ -21,5 +12,3 @@ fi
 
 # Added by Toolbox App
 export PATH="$PATH:/home/nize/.local/share/JetBrains/Toolbox/scripts"
-
-. "$HOME/.cargo/env"

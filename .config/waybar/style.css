@@ -1,0 +1,159 @@
+@define-color light #ebdbb2;
+@define-color dark #1d2021;
+
+@define-color yellow #fabd2f;
+@define-color red #cc241d;
+@define-color grey #928374;
+@define-color blue #458588;
+@define-color blue-dull #83a598;
+@define-color purple #d3869b;
+@define-color purple-dark #b16286;
+@define-color green #8ec07c;
+@define-color green2 #98971a;
+@define-color green3 #b8bb26;
+@define-color green4 #689d6a;
+
+* {
+  font-family: "RobotoMono Nerd Font Mono";
+  font-weight: bold;
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  color: @light;
+  background: @dark;
+  border-radius: 0;
+}
+
+tooltip {
+  font-size: 10px;
+}
+
+#keyboard-state,
+#pulseaudio,
+#network,
+#memory,
+#cpu,
+#clock,
+#disk,
+#temperature,
+#tray {
+  padding: 1px 6px 0 6px;
+  font-size: 10px;
+}
+
+#cpu,
+#memory,
+#temperature {
+  padding: 1px 8px 0 8px;
+}
+
+#workspaces button {
+  padding: 0px;
+  font-size: 14px;
+  color: @light;
+  border-radius: 0;
+}
+/*
+#workspaces button#sway-workspace-1,
+#workspaces button#sway-workspace-2,
+#workspaces button#sway-workspace-3 {
+  font-size: 14px;
+  padding: 0;
+}*/
+
+#workspaces button.focused {
+  color: @green;
+}
+
+#workspaces button.persistent {
+  color: @grey;
+}
+
+#memory.critical,
+#cpu.critical,
+#temperature.critical {
+  color: @red;
+  text-shadow: 1px 1px 1px @dark;
+}
+
+#memory.warning,
+#cpu.warning,
+#temperature.warning {
+  color: @yellow;
+  text-shadow: 1px 1px 1px @dark;
+}
+
+#temperature {
+  background: @green3;
+  color: @dark;
+}
+
+#cpu {
+  background: @green4;
+  color: @dark;
+}
+
+#memory {
+  background: @blue-dull;
+  color: @dark;
+}
+
+#pulseaudio {
+  background: @grey;
+  color: @dark;
+}
+
+#network {
+  background: @purple;
+  color: @dark;
+}
+
+#custom-menu,
+#custom-arrow0,
+#custom-arrow1,
+#custom-arrow2,
+#custom-arrow3,
+#custom-arrow4,
+#custom-arrow5 {
+  font-size: 14px;
+}
+
+#custom-menu {
+  background: @green;
+  color: @dark;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+}
+
+#custom-arrow0 {
+  color: @green;
+}
+
+#custom-arrow1 {
+  color: @purple;
+}
+
+#custom-arrow2 {
+  color: @blue-dull;
+  background: @purple;
+}
+
+#custom-arrow3 {
+  color: @green4;
+  background: @blue-dull;
+}
+
+#custom-arrow4 {
+  color: @green3;
+  background: @green4;
+}
+
+#custom-arrow5 {
+  color: @grey;
+  background: @green3;
+}

@@ -1,0 +1,128 @@
+{
+  "layer": "top",
+  "modules-left": [
+    "custom/menu",
+    "custom/arrow0",
+    "sway/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "keyboard-state",
+    "tray",
+    "custom/arrow1",
+    "network",
+    "custom/arrow2",
+    "memory",
+    "custom/arrow3",
+    "cpu",
+    "custom/arrow4",
+    "temperature",
+    "custom/arrow5",
+    "pulseaudio"
+  ],
+  "sway/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    }
+  },
+  "keyboard-state": {
+    "capslock": true,
+    "format": "{icon}",
+    "format-icons": {
+      "locked": "caps",
+      "unlocked": ""
+    }
+  },
+  "network": {
+    "interval": 8,
+    "format-wifi": " {essid} ({signalStrength}%)",
+    "format-ethernet": "󰌘 {ifname}",
+    "format-disconnected": "",
+    "tooltip-format": "{ipaddr}",
+    "tooltip-format-disconnected": "disconnected"
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "format": "󰖀 {volume}%",
+    "format-icons": {
+      "default": [
+        "",
+        "󰖀"
+      ]
+    },
+    "format-muted": "󰖁 {volume}%"
+  },
+  "cpu": {
+    "interval": 8,
+    "tooltip": false,
+    "format": " {usage}%",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+  "memory": {
+    "interval": 8,
+    "format": "󰍛 {}%",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+  "temperature": {
+    "critical-threshold": 70,
+    "interval": 8,
+    "format": " {temperatureC}°C",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%Y-%m-%d  |  %H:%M}"
+  },
+  "tray": {
+    "icon-size": 12,
+    "spacing": 6
+  },
+  "custom/menu": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "swaynag -t warning -m $USER -b 'menu' '$MENU' -b 'reboot' 'reboot' -b 'shutdown' 'shutdown -P now' --background=#282828 --text=#ebdbb2 --border-bottom-size=0 --button-border-size=0 --button-background=#ebdbb2 --button-text=#282828"
+  },
+  "custom/arrow0": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/arrow1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/arrow2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/arrow3": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/arrow4": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/arrow5": {
+    "format": "",
+    "tooltip": false
+  }
+}
