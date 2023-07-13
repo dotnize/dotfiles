@@ -32,6 +32,8 @@ alias i="sudo dnf install"
 alias u="sudo dnf upgrade"
 alias cu="c && u"
 
+alias pn="pnpm"
+
 # aseprite
 alias ase="~/.steam/steam/steamapps/common/Aseprite/aseprite & disown"
 
