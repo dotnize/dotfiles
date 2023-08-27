@@ -37,5 +37,4 @@ alias pn="pnpm"
 # aseprite
 alias ase="~/.steam/steam/steamapps/common/Aseprite/aseprite & disown"
 
-export GPG_TTY=$(tty)
 . "$HOME/.cargo/env"
